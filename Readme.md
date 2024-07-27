@@ -24,7 +24,7 @@ This project is a Commission Calculator implemented in PHP. It calculates the co
 1. **Clone the Repository**
 
    ```sh
-   git clone https://github.com/abrshewube/php-test-project
+   git clone https://github.com/abrshewube/php_test_project
    cd commission-calculator
    ```
 
