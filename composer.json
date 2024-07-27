@@ -1,0 +1,14 @@
+{
+    "name": "pc/test",
+    "autoload": {
+        "psr-4": {
+            "Pc\\Test\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Abrham"
+        }
+    ],
+    "require": {}
+}
