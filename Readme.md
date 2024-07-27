@@ -11,8 +11,7 @@ This project is a Commission Calculator implemented in PHP. It calculates the co
 - [Running Tests](#running-tests)
 - [Project Structure](#project-structure)
 - [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Setup
 
@@ -25,7 +24,7 @@ This project is a Commission Calculator implemented in PHP. It calculates the co
 1. **Clone the Repository**
 
    ```sh
-   git clone https://github.com/yourusername/commission-calculator.git
+   git clone https://github.com/abrshewube/php-test-project
    cd commission-calculator
    ```
 
@@ -105,14 +104,6 @@ This screenshot shows the output of running the `script.php` file with `input.cs
 ![Test](screenshots/test.jpg)
 
 This screenshot shows the output of running the PHPUnit test suite. The test results indicate whether the application's calculations are correct based on the provided test cases.
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request with your changes.
-
-## License
-
-This project is licensed under the MIT License.
 
 ---
 
