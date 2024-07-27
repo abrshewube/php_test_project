@@ -3,7 +3,7 @@
 
 # Commission Calculator
 
-This project is a Commission Calculator implemented in PHP. It calculates the commission fees for different types of transactions including deposits, private withdrawals, and business withdrawals. The project is tested using PHPUnit.
+This project is a Commission Calculator implemented in PHP. It calculates the commission fees for different types of transactions including deposits, private withdrawals, and business withdrawals. The project is tested using PHPUnit. **It took me around 12 hours to complete this project.**
 
 ## Table of Contents
 - [Setup](#setup)
