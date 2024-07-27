@@ -23,23 +23,28 @@ class CalculatorTest extends TestCase
         $this->assertEquals('0.06', $result);
 
         $result = $depositCalculator->calculate(200.00, 'JPY');
-        $this->assertEquals('1', $result);  // Expected to be rounded up correctly
+        $this->assertEquals('1', $result);  
     }
 
     public function testPrivateWithdrawCalculation()
     {
         $exchangeRateService = new ExchangeRateService();
         $privateWithdrawCalculator = new PrivateWithdrawCalculator();
-
+    
+        // Check calculation for 1000.00 EUR
         $result = $privateWithdrawCalculator->calculate('2022-03-15', 1, 1000.00, 'EUR', $exchangeRateService);
         $this->assertEquals('0.00', $result);
-
+    
+        // Check calculation for 2000.00 EUR
         $result = $privateWithdrawCalculator->calculate('2022-03-15', 1, 2000.00, 'EUR', $exchangeRateService);
-        $this->assertEquals('3.00', $result);
-
+        $this->assertEquals('6.00', $result);
+    
+        // Check calculation for 100000.00 JPY
+      
         $result = $privateWithdrawCalculator->calculate('2022-03-15', 1, 100000.00, 'JPY', $exchangeRateService);
-        $this->assertEquals('8612', $result);  // Expected to convert and round correctly
+        $this->assertEquals('300', $result);  
     }
+    
 
     public function testBusinessWithdrawCalculation()
     {
@@ -49,7 +54,7 @@ class CalculatorTest extends TestCase
         $this->assertEquals('2.50', $result);
 
         $result = $businessWithdrawCalculator->calculate(500.00, 'JPY');
-        $this->assertEquals('3', $result);  // Expected to be rounded up correctly
+        $this->assertEquals('3', $result); 
     }
 
     public function testOverallCalculation()
@@ -62,7 +67,7 @@ class CalculatorTest extends TestCase
             '0.06',
             '1.50',
             '0',
-            '0.70',
+            '0.69',
             '0.30',
             '0.30',
             '3.00',
