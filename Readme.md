@@ -67,7 +67,6 @@ To run the tests using PHPUnit:
 This will execute the test suite and display the results.
 
 ## Project Structure
-
 ```
 commission-calculator/
 ├── src/
@@ -77,8 +76,8 @@ commission-calculator/
 │   ├── DepositCalculator.php
 │   └── BusinessWithdrawCalculator.php
 ├── tests/
-│   └── CalculatorTest.php
-├── input.csv
+│   ├── CalculatorTest.php
+│   └── input.csv
 ├── composer.json
 ├── script.php
 └── phpunit.xml
